@@ -4,20 +4,18 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/sections/Projects';
 
-import Journey from '@/components/sections/Journey';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="bg-[#0A0E17]">
+    <main>
       <Navbar />
       <Hero />
       <About />
       <Skills />
       <Projects />
 
-      <Journey />
       <Contact />
       <Footer />
     </main>
