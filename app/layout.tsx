@@ -23,8 +23,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Fazar Fadillah | Portfolio',
-  description: 'Portofolio Mahasiswa Sistem Informasi - Web Developer',
+  metadataBase: new URL('https://pajarfadilah.my.id'),
+
+  title: {
+    default: 'Pajar Fadilah | Full Stack Developer',
+    template: '%s | Pajar Fadilah',
+  },
+
+  description: 'Portfolio Pajar Fadilah, Full Stack Developer yang berfokus pada pengembangan aplikasi web modern menggunakan Next.js, React, Laravel, TypeScript, dan MySQL.',
+
+  keywords: ['Pajar Fadilah', 'Pajar Fadilah Portfolio', 'Full Stack Developer', 'Web Developer', 'Next.js Developer', 'React Developer', 'Laravel Developer', 'TypeScript Developer', 'Indonesia'],
+
+  authors: [
+    {
+      name: 'Pajar Fadilah',
+      url: 'https://pajarfadilah.my.id',
+    },
+  ],
+
+  creator: 'Pajar Fadilah',
+
+  openGraph: {
+    type: 'website',
+    locale: 'id_ID',
+    url: 'https://pajarfadilah.my.id',
+    siteName: 'Pajar Fadilah',
+    title: 'Pajar Fadilah | Full Stack Developer',
+    description: 'Portfolio Pajar Fadilah — Full Stack Developer yang membangun aplikasi web modern dan responsif.',
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
